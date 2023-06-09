@@ -3,3 +3,155 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #233747;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 80px;
+    align-items: center;
+}
+
+/*logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: #f7c116;
+    flex: 1;
+}
+.logo h1{
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo img{
+    width: 60px;
+    height: 10vh;
+    cursor: pointer;
+}
+/*right menu*/
+.right_side_header{
+    display: flex;
+    align-items: center;
+}
+/*menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    list-style: none;
+    margin-right: 30px;
+    border-bottom: 2px solid #233747
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li:hover{
+    border-bottom: 2px solid #f7c116;
+}
+
+/*search icon*/
+i{
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 100%;
+    background-color: #f7c116;
+}
+
+/*main*/
+main{
+    max-width: 1024px;
+    height: 85vh;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+main section{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+main section h1{
+    color: #f7c116;
+    font-size: 40px;
+    line-height: 30px;
+}
+main section h2{
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+}
+main section p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+main section input[type='text'],
+main section input[type='email']
+{
+    width: 350px;
+    height: 40px;
+    border-radius: 16px;
+    border: 0 none;
+    outline: 0;
+    border: 1px solid #233747;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+main section input[type='submit']{
+    width: 100px;
+    height: 40px;
+    border-radius: 16px;
+    border: 0 none;
+    outline: 0;
+    border: 1px solid #233747;
+    color: white;
+    font-weight: bold;
+    background-color: #f7c116;
+    cursor: pointer;
+}
+main section input[type='text']:hover,
+main section input[type='email']:hover,
+main section input[type='submit']:hover{
+    transform: scale(1.05);
+}
+
+/*mains right*/
+.img2_right{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.img2_right img{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
